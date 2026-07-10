@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "investor-egx"
+version = "0.1.0"
+description = "Free-data EGX pipeline with SQL persistence and AI feed output."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+investor-egx = "investor_egx.cli:main"

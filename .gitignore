@@ -1,0 +1,17 @@
+# virtualenv
+.venv/
+venv/
+
+# python
+__pycache__/
+*.pyc
+
+# local databases
+data/*.sqlite3
+data/*.sqlite3.bak
+
+# env / secrets
+.env
+
+# misc
+.DS_Store
