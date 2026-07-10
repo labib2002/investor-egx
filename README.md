@@ -7,7 +7,7 @@ a compact AI/LLM-ready decision payload per stock.
 Built around free sources (TradingView scanner, Yahoo Finance) with retry/rate-limit
 plumbing, idempotent SQL upserts, and a pipeline audit log.
 
-## Honest status (verified 2026-07-10, Windows / Python 3.11)
+## Status (verified 2026-07-10, Windows / Python 3.11)
 
 | Command | Status | Notes |
 |---|---|---|
@@ -20,7 +20,7 @@ plumbing, idempotent SQL upserts, and a pipeline audit log.
 | `build-ai-feed` | Works | JSON and markdown formats with returns, realized vol, fundamentals, sentiment, fee math |
 | `run-all` | Untested at full scale | Same code paths as the individual commands; a full 343-ticker sweep is slow and rate-limit sensitive |
 
-### Data sources — current reality
+### Data sources
 
 - **TradingView scanner API** (`tradingview-screener`): primary source for the ticker
   universe, fundamentals, and analyst recommendation counts. Working.
