@@ -33,7 +33,7 @@ plumbing, idempotent SQL upserts, and a pipeline audit log.
   HTTP 403 (Investing.com shut them down). The code degrades gracefully (the fallback
   simply yields no rows), but no data flows from this source. `cloudscraper` remains
   only for the last-resort HTML label scraper.
-- `investpy` universe source: optional import, not installed by default — skipped.
+- `investpy` universe source: optional import, not installed by default - skipped.
 
 ### Known limitations
 
@@ -45,7 +45,7 @@ plumbing, idempotent SQL upserts, and a pipeline audit log.
   (`COMI`) and Yahoo-search rows by ISIN (`EGS60121C018`), so the same company can
   appear twice with complementary metadata.
 - **Postgres is schema-only.** `sql/schema_postgres.sql` ships the DDL, but
-  `db.py` is implemented on `sqlite3` — there is no Postgres connection layer.
+  `db.py` is implemented on `sqlite3` - there is no Postgres connection layer.
 - **Silent error handling.** Source adapters swallow exceptions and return empty
   results; a failing source looks identical to an empty market. There is no logging
   and there are no tests.
